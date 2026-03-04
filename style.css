@@ -1,8 +1,8 @@
-/* RESET */
+/* ===== RESET & BASE ===== */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* BODY */
@@ -18,28 +18,6 @@ body {
     box-shadow: 0 10px 25px rgba(255, 182, 193, 0.3);
 }
 
-/* HEADER */
-header {
-    text-align: center;
-    margin-bottom: 25px;
-}
-
-header h1 {
-    font-size: 30px;
-    color: #d63384;
-}
-
-
-/* SECTION TITLE */
-h2 {
-    margin-top: 30px;
-    margin-bottom: 10px;
-    padding-bottom: 5px;
-    border-bottom: 2px solid #f783ac;
-    color: #c2255c;
-}
-
-
 /* FOTO */
 img {
     display: block;
@@ -53,40 +31,107 @@ img:hover {
     transform: scale(1.05);
 }
 
-/* PARAGRAF */
+/* ===== HEADER ===== */
+header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #1a1a2e;
+}
+
+header hr {
+  border: none;
+  border-top: 2px solid #78392;
+  margin-top: 12px;
+}
+
+/* ===== FOTO PROFIL ===== */
+h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+/* ===== TENTANG SAYA ===== */
 p {
-    margin-top: 10px;
-    text-align: justify;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 12px;
+  color: #444;
+  text-align: center;
 }
 
-/* LIST */
-ul, ol {
-    margin-left: 25px;
-    margin-top: 10px;
+/* ===== CARD BASE (dipakai semua section) ===== */
+.profil-card,
+.data-card,
+.hobby-card,
+.edu-card,
+.skill-card,
+.experience-card,
+.achievement-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 32px 40px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  border-left: 4px solid #ffe4ec;
 }
 
-li {
-    margin-bottom: 8px;
+/* ===== JUDUL TIAP CARD ===== */
+.profil-title,
+.data-title,
+.hobby-title,
+.edu-title,
+.skill-title,
+.experience-title,
+.achievement-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 16px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ffe4ec;
+  text-align: center;
 }
 
-/* LINK */
-a {
-    color: #d63384;
-    text-decoration: none;
-    font-weight: 500;
+/* ===== LIST TIAP CARD ===== */
+.data-list,
+.hobby-list,
+.edu-list,
+.skill-list,
+.experience-list,
+.achievement-list {
+  list-style: disc;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-a:hover {
-    color: #a61e4d;
-    text-decoration: underline;
+.data-list li,
+.hobby-list li,
+.edu-list li,
+.skill-list li,
+.experience-list li,
+.achievement-list li {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
 }
 
-/* FOOTER */
+/* ===== FOOTER ===== */
 footer {
-    margin-top: 40px;
-    text-align: center;
-    font-size: 14px;
-    color: #a61e4d;
+  text-align: center;
+  padding: 20px;
+  color: #888;
+  font-size: 0.9rem;
+  border-top: 2px solid #ffe4ec;
+  margin-top: 12px;
 }
 
 /* RESPONSIVE */
